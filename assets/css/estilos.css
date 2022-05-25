@@ -107,7 +107,7 @@ body {
     gap: 16px;
 }
 
-.cartao--destaque {
+.card--featured {
     margin-bottom: 16px;
 }
 
@@ -115,58 +115,58 @@ body {
     display: none;
 }
 
-.titulo-pagina {
+.title-page {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.cartao {
+.card {
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
 }
 
-.cartao__conteudo {
+.card__conteudo {
     padding: 16px;
     gap: 8px;
     display: grid;
     grid-template-columns: auto 1fr;
 }
 
-.cartao__titulo {
+.card__titulo {
     font-size: 1.2rem;
     font-weight: 700;
     grid-column: span 2;
 }
 
-.cartao__destaque {
+.card__destaque {
     grid-column: span 2;
 }
 
-.cartao__perfil {
+.card__perfil {
     color: #95999C;
     font-size: 0.9rem;
     grid-column: span 2;
 }
 
-.cartao__info {
+.card__info {
     display: flex;
     align-items: center;
     color: #95999C;
 }
 
-.cartao__info--tempo::before {
+.card__info--tempo::before {
     content: "\e90c";
     margin-right: 8px;
 }
 
-.cartao__info--visualizacao::before {
+.card__info--visualizacao::before {
     content: "\e90f";
     margin-right: 8px;
 }
 
-.cartao__botao {
+.card__botao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,17 +178,17 @@ body {
     justify-self: flex-end;
 }
 
-.cartao__botao--play::before {
+.card__botao--play::before {
     content: "\e90b";
     font-size: 24px;
 }
 
-.cartao__botao--destaque {
+.card__botao--destaque {
     width: 100%;
     grid-column: span 2;
 }
 
-.cartao__botao--destaque::before {
+.card__botao--destaque::before {
     margin-right: 8px;
 }
 
@@ -202,15 +202,15 @@ body {
     font-weight: 700;
 }
 
-.cartao--recentes {
+.card--recentes {
     display: none;
 }
 
-.cartao__img--desktop {
+.card__img--desktop {
     display: none;
 }
 
-.cartao__img--mobile {
+.card__img--mobile {
     display: block;
 }
 
@@ -219,17 +219,17 @@ body {
         display: grid;
         grid-template-columns: auto 1fr;
     }
-    .cartao--destaque {
+    .card--featured {
         margin-bottom: 0;
     }
-    .cartao__botao--destaque {
+    .card__botao--destaque {
         grid-column: auto;
-        padding: 0px 8px;
+        margin-left: 16px;
     }
-    .cartao__img--desktop {
+    .card__img--desktop {
         display: block;
     }
-    .cartao__img--mobile {
+    .card__img--mobile {
         display: none;
     }
     .secao {
@@ -292,9 +292,9 @@ body {
         column-gap: 32px;
         padding: 16px 60px;
         grid-column: 2;
-        grid-template-areas: "titulo-pagina titulo-pagina titulo-pagina" "destaque-video destaque-video video-recentes" "secao-videos secao-videos secao-videos" "produtos-recentes destaque-produto destaque-produto" "secao-produtos secao-produtos secao-produtos";
+        grid-template-areas: "title-page title-page title-page" "video-featured video-featured video-recentes" "secao-videos secao-videos secao-videos" "produtos-recentes destaque-produto destaque-produto" "secao-produtos secao-produtos secao-produtos";
     }
-    .cartao--recentes {
+    .card--recentes {
         display: grid;
         grid-template-columns: repeat(2, auto);
         align-items: center;
@@ -304,40 +304,40 @@ body {
         box-sizing: border-box;
         align-self: flex-start;
     }
-    .cartao--recentes .cartao__titulo {
+    .card--recentes .card__titulo {
         grid-column: auto;
     }
-    .cartao__link {
+    .card__link {
         font-size: 0.8rem;
         color: #0480DC;
         font-weight: 600;
         justify-self: flex-end;
     }
-    .cartao__lista {
+    .card__lista {
         display: grid;
         row-gap: 16px;
         grid-column: span 2;
     }
-    .cartao__item {
+    .card__item {
         display: grid;
         grid-template-columns: auto 1fr;
         gap: 8px;
     }
-    .cartao__item-thumbnail {
+    .card__item-thumbnail {
         width: 32px;
         grid-row: span 2;
     }
-    .cartao__item-titulo {
+    .card__item-titulo {
         font-size: 0.9rem;
         line-height: 1.2rem;
         font-weight: 700;
     }
-    .cartao__item-perfil {
+    .card__item-perfil {
         font-size: 0.8rem;
         color: #95999C;
     }
-    .destaque-video {
-        grid-area: destaque-video;
+    .video-featured {
+        grid-area: video-featured;
     }
     
     .video-recentes {
